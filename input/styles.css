@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(245, 235, 221);
+    max-width: 1000px;
+    color: rgb(32, 29, 29);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#header {
+    background-color: black;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    min-width: 1000px;
+    border-radius: 3px;
+    
+    
+}
+
+
+#nav-bar ul {
+    min-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+li {
+    list-style: none;
+}
+
+#header-img {
+    width: 110px;
+    height: 80px;
+}
+.info-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    
+
+}
+.info-sub input[type='email'] {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.info-sub input[type='submit'] {
+    background-color: darkgoldenrod;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 150px;
+}
+.inf-subtitle {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #ccbfbf;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(148, 142, 142);
+    padding: 10px;
+}
+
+a:hover {
+    color: rgb(80, 78, 78);
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100px;
+    text-align: end;
+}
+footer a {
+    padding: 2px;
+}
+footer ul {
+    display: flex;
+    justify-content: end;
+    
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+@media screen and (width < 1200px) {
+    #header nav ul {
+       min-width: 100%;
+
+    }
+    #header {
+        min-width: 100%;
+        font-size: 12px;
+    }
+    #header-img {
+        width: 50px;
+        height: 30px;
+    }
+    .inf-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    footer ul, footer span {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    footer ul li {
+        margin: 0 2px;
+    }
+    footer ul li:last-of-type {
+        margin: 0;
+    }
+    .frame {
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+
+
+}
