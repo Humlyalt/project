@@ -1,0 +1,57 @@
+.benefits {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+
+    &::after {
+        content: "II";
+
+        position: absolute;
+        top: 0;
+        left: calc(50% + 555px);
+        transform: translate(-50%, 0);
+        line-height: 1.15;
+        opacity: 0.02;
+        font-size: 400px;
+        font-family: $font-accent;
+    }
+}
+
+.benefits__row {
+    display: flex;
+    column-gap: 70px;
+
+    @include mediaTablet {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 40px;
+        
+    }
+}
+
+.benefits__item {
+    text-align: center;
+}
+
+.benefits__item-img {
+    margin-bottom: 53px;
+
+    @include mediaTablet {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+
+    }
+}
+
+.benefits__item-text {
+    font-size: 20px;
+    line-height: 1.35;
+    font-family: $font-secondary;
+    font-weight: 300;
+
+    @include mediaTablet {
+        font-size: 16px;
+        
+    }
+}
